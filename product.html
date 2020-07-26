@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIMEshop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+
+</head>
+
+<body>
+    <div class="d-flex justify-content-around">
+        <p>tel:095627277</p>
+        <p>welcome to our shop</p>
+        <select class="custom-select" style="width: 70px;">
+            <option selected>AM</option>
+            <option value="1">RU</option>
+            <option value="2">EN</option>
+        </select>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <img width="100px" src="https://media.creativemornings.com/uploads/sponsor/logo/14597/square_RGB_Logomark.png"
+            alt="" class="lime">
+        <a class="navbar-brand" href="#">LIMEshop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle ml-2" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    My account
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginmodal">login</a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#registermodal">register</a>
+                    <a class="dropdown-item" href="orders.html"  >My orders</a>
+                    <a class="dropdown-item" href="account.html"  >Account settings</a>
+
+                </div>
+            </div>
+    </nav>
+    <div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <div class="modal fade" id="registermodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Your name</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Age</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <nav aria-label="breadcrumb" class="row">
+            <ol class="breadcrumb mt-3 col mr-auto">
+                <li class="breadcrumb-item"><a href="shop.html">Gadgets</a></li>
+                <li class="breadcrumb-item"><a href="shop.html">Smartphones</a></li>
+                <li class="breadcrumb-item"><a href="shop.html">Gadgets</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Apple / Смартфон iPhone XR 64GB</li>
+            </ol>
+        </nav>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-primary font-weight-bold">Apple / Смартфон iPhone XR 64GB</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="row">
+                    <div class="col-3">
+                        <a class="border d-inline-block m-1 p-1" data-fancybox="gallery" href="img/iphone.jpg"><img
+                                class="img-fluid" src="img/iphone.jpg"></a>
+                        <a class="border d-inline-block m-1 p-1" data-fancybox="gallery" href="img/iphone2.jpg"><img
+                                class="img-fluid" src="img/iphone2.jpg"></a>
+                        <a class="border d-inline-block m-1 p-1" data-fancybox="gallery" href="img/iphone3.jpg"><img
+                                class="img-fluid" src="img/iphone3.jpg"></a>
+                        <a class="border d-inline-block m-1 p-1" data-fancybox="gallery" href="img/iphone4.jpg"><img
+                                class="img-fluid" src="img/iphone4.jpg"></a>
+                    </div>
+                    <div class="col">
+                        <a class="" data-fancybox="gallery" href="img/iphone.jpg"><img class="img-fluid"
+                                src="img/iphone.jpg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="font-weight-bold">$52240</h3>
+                    </div>
+                </div>
+                <form class="w-100 row" action="">
+                    <div class="col-12 col-md-5">
+                        <div class="input-group mb-3">
+
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <a href="cart.html" class="btn btn-primary">Add to Cart  </a>
+                    </div>
+                </form>
+                <div class="row">
+
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p class="font-weight-bold my-2">Color</p>
+                    </div>
+                    <div class="col-12">
+                        <form action="">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="black" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="black">Black</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="silver" name="customRadioInline1" class="custom-control-input"
+                                    checked="">
+                                <label class="custom-control-label" for="silver">White</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="silver" name="customRadioInline1" class="custom-control-input"
+                                    checked="">
+                                <label class="custom-control-label" for="silver">Red</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="accordion w-100" id="accordionExample">
+
+                <div class="card">
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p class="font-weight-bold">Key Features</p>
+                            <ul>
+                                <li>Версия операционной системыiOS 12</li>
+                                <li>Тип SIM картыnano SIM</li>
+                                <li> МодельiPhone Xr 64GB</li>
+                                <li> Гарантийный срок1год</li>
+                                <li> Степень пылевлагозащитыIP67</li>
+
+
+                            </ul>
+                            Новый ЖК-дисплей создан на основе самых передовых технологий и обеспечивает невероятно
+                            точную цветопередачу. Всё, что вы видите на дисплее, выглядит просто потрясающе.
+                            Шестиканальный датчик света автоматически настраивает баланс белого в соответствии с
+                            цветовой температурой освещения, поэтому изображение на дисплее выглядит так, будто
+                            напечатано на бумаге, - естественно и комфортно для глаз. Исключительно прочное стекло
+                            плотно прилегает к рамке из алюминия, применяющегося в аэрокосмической отрасли. Поэтому
+                            iPhone XR надёжно защищён от воды и выдерживает погружение на глубину до 1 метра
+                            длительностью до 30 минут. И даже если вы прольёте на него кофе, чай или газировку, он будет
+                            в порядке.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <span class="w-25">Productivity</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 10%"
+                                    aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="w-25">Performance</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="w-25">Durability</span>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="w-25">Battery Life</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="w-25">Shipping</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid.
+                            3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                            laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                            coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                            anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                            occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                            heard
+                            of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center pb-4 mt-3">
+            <h4 class="font-weight-bold col-12 text-center mb-3">You may also like</h4>
+            <div class="carousel w-100 slide" id="moreCarousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row  justify-content-center  pb-4">
+                            <div class="card col-lg-2 col-md-2 col-sm-6 col-12">
+                                <img src="img/sandal.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">CROCS SANDALS</h5>
+                                    <p class="card-text">Summer blue sandals</p>
+                                    <p class="card-text">2 399$ </p>
+                                    <a href="#" class="btn btn-primary">Go </a>
+                                </div>
+                            </div>
+                            <div class="card col-lg-2 col-md-2 col-sm-6 col-12">
+                                <img src="img/honor.jpg" class="card-img-top" alt="...">
+                                <div class="card-body ">
+                                    <h5 class="card-title">Honor / Смарт-часы </h5>
+                                    <p class="card-text">часы MagicWatch</p>
+                                    <p class="card-text"> 11 041$</p>
+                                    <a href="#" class="btn btn-primary">Go </a>
+                                </div>
+                            </div>
+                            <div class="card col-lg-2 col-md-2 col-sm-6 col-12 ">
+                                <img src="img/reebok.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">REEBOK/кроссовки</h5>
+                                    <p class="card-text">Кроссовки LIQUIFECT</p>
+                                    <p class="card-text">3 087$</p>
+                                    <a href="#" class="btn btn-primary">Go </a>
+                                </div>
+                            </div>
+                            <div class="card col-lg-2 col-md-2 col-sm-6 col-12">
+                                <img src="img/dress.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Натали / Платье</h5>
+                                    <p class="card-text">Платье трикотажное</p>
+                                    <p class="card-text"> 640$</p>
+                                    <a href="#" class="btn btn-primary">Go </a>
+                                </div>
+                            </div>
+                            <div class="card col-lg-2 col-md-2 col-sm-6 col-12">
+                                <img src="img/samsung.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Samsung / Телевизор</h5>
+                                    <p class="card-text">Телевизор T32E310EX</p>
+                                    <p class="card-text">640$</p>
+                                    <a href="#" class="btn btn-primary">Go </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <nav class="col mt-2">
+                <ul class="pagination justify-content-center cawrousel-indicators">
+                    <li class="page-item">
+                        <a class="page-link" href="#moreCarousel" role="button" data-slide="prev">Previous</a>
+                    </li>
+                    <li data-target="#moreCarousel" data-slide-to="0" class="page-item"><a class="page-link"
+                            href="shop.html">1</a></li>
+                    <li data-target="#moreCarousel" data-slide-to="1" class="page-item"><a class="page-link"
+                            href="shop.html">2</a></li>
+                    <li data-target="#moreCarousel" data-slide-to="2" class="page-item"><a class="page-link"
+                            href="shop.html">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#moreCarousel" role="button" data-slide="next">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative to help
+                        the upcoming programmers with the code. Scanfcode focuses on providing the most efficient
+                        code or snippets as the code wants to be simple. We will help programmers build up concepts
+                        in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap,
+                        JavaScript, PHP, Android, SQL and Algorithm.</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Categories</h6>
+                    <ul class="footer-links">
+                        <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+                        <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+                        <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+                        <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+                        <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+                        <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="http://scanfcode.com/about/">About Us</a></li>
+                        <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+                        <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+                        <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+                        <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
+                        <a href="#">Scanfcode</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <style>
+        body {
+            background-color: yellow;
+        }
+    </style>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</body>
+
+</html>
